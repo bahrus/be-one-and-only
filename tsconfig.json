@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module":"ESNext",
+		"sourceMap": false,
+		"experimentalDecorators": false,
+		"newLine": "LF",
+		"strict": true,
+		"watch": true
+	},
+	"files":[
+		"be-exportable.ts",
+		"importFromScriptRef.ts"
+
+	],
+	"exclude":[
+		"node_modules",
+	]
+
+}
