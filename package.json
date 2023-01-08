@@ -2,7 +2,23 @@
   "name": "be-one-and-only",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "be-one-and-only.js",
+  "module": "be-one-and-only.js",
+  "keywords": [
+    "web components",
+    "web component",
+    "custom elements",
+    "custom element",
+    "singleton"
+  ],
+  "exports": {
+    ".": "./be-one-and-only.js",
+    "./be-written.js": "./be-one-and-only.js"
+  },
+  "files": [
+    "*.*"
+  ],
+  "types": "types.d.ts",
   "scripts": {
     "test": "playwright test",
     "serve": "node node_modules/may-it-serve/serve.js",
