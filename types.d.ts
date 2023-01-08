@@ -20,5 +20,5 @@ export type PP = ProxyProps;
 export type PA = Partial<PP>;
 
 export interface Actions{
-    beBornIfTheOne(pp: PP): PA;
+    beBornIfTheOne(pp: PP, mold: PA): PA;
 }
