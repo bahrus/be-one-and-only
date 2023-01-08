@@ -9,8 +9,7 @@
 		"watch": true
 	},
 	"files":[
-		"be-exportable.ts",
-		"importFromScriptRef.ts"
+		"be-one-and-only.ts"
 
 	],
 	"exclude":[
