@@ -9,7 +9,7 @@ export class BeOneAndOnly extends EventTarget {
         self.id = id;
         const target = this.selectTarget(pp);
         const targetRn = target.getRootNode();
-        if (targetRn.getElementById(id) != null)
+        if (targetRn !== rn && targetRn.getElementById(id) != null)
             return mold;
         target.appendChild(self.content.cloneNode(true));
         return mold;

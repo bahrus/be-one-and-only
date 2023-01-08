@@ -11,7 +11,7 @@ export class BeOneAndOnly extends EventTarget implements Actions{
         self.id = id;
         const target = this.selectTarget(pp);
         const targetRn = target.getRootNode() as DocumentFragment;
-        if(targetRn.getElementById(id) != null) return mold;
+        if(targetRn !== rn && targetRn.getElementById(id) != null) return mold;
         target.appendChild(self.content.cloneNode(true));
         return mold;
     }
