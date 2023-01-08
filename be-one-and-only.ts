@@ -6,7 +6,9 @@ export class BeOneAndOnly extends EventTarget implements Actions{
     beBornIfTheOne(pp: PP): PA {
         const {self, id} = pp;
         const rn = self.getRootNode() as DocumentFragment;
-        if(rn.getElementById(id) !== null) return;
+        if(rn.getElementById(id) !== null) return {
+            resolved: true
+        } as PA;
         self.id = id;
         const target = this.selectTarget(pp);
         target.appendChild(self.content.cloneNode(true));
