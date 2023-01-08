@@ -36,7 +36,7 @@ define<PP & BeDecoratedProps<PP, Actions>, Actions>({
         propDefaults:{
             ifWantsToBe,
             upgrade,
-            forceVisible: ['template'],
+            forceVisible: [upgrade],
             virtualProps,
             primaryProp: 'id'
         },

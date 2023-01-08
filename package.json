@@ -13,7 +13,7 @@
   ],
   "exports": {
     ".": "./be-one-and-only.js",
-    "./be-written.js": "./be-one-and-only.js"
+    "./be-one-and-only.js": "./be-one-and-only.js"
   },
   "files": [
     "*.*"

@@ -32,7 +32,7 @@ define({
         propDefaults: {
             ifWantsToBe,
             upgrade,
-            forceVisible: ['template'],
+            forceVisible: [upgrade],
             virtualProps,
             primaryProp: 'id'
         },
