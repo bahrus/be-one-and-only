@@ -17,6 +17,8 @@ export interface ProxyProps extends VirtualProps{
 
 export type PP = ProxyProps;
 
+export type PA = Partial<PP>;
+
 export interface Actions{
-    beBornIfTheOne(pp: PP): void;
+    beBornIfTheOne(pp: PP): PA;
 }

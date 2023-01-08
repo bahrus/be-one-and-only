@@ -31,8 +31,7 @@
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
     "@playwright/test": "1.29.2",
-    "may-it-serve": "0.0.4",
-    "@custom-elements-manifest/analyzer": "0.6.4"
+    "may-it-serve": "0.0.4"
   },
   "repository": {
     "type": "git",

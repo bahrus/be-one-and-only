@@ -1,15 +1,18 @@
-import {Actions, Proxy, PP, VirtualProps, ProxyProps} from './types';
+import {Actions, Proxy, PP, VirtualProps, ProxyProps, PA} from './types';
 import {define, BeDecoratedProps} from 'be-decorated/DE.js';
 import {register} from 'be-hive/register.js';
 
 export class BeOneAndOnly extends EventTarget implements Actions{
-    beBornIfTheOne(pp: PP): void {
+    beBornIfTheOne(pp: PP): PA {
         const {self, id} = pp;
         const rn = self.getRootNode() as DocumentFragment;
         if(rn.getElementById(id) !== null) return;
         self.id = id;
         const target = this.selectTarget(pp);
         target.appendChild(self.content.cloneNode(true));
+        return {
+            resolved: true
+        } as PA;
     }
 
     selectTarget(pp: PP){
