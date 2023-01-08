@@ -20,6 +20,7 @@ export class BeOneAndOnly extends EventTarget {
 const tagName = 'be-one-and-only';
 const ifWantsToBe = 'one-and-only';
 const upgrade = 'template';
+export const virtualProps = ['id'];
 define({
     config: {
         tagName,
@@ -27,7 +28,7 @@ define({
             ifWantsToBe,
             upgrade,
             forceVisible: ['template'],
-            virtualProps: ['id'],
+            virtualProps,
             primaryProp: 'id'
         },
         actions: {

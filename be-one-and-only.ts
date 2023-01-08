@@ -23,6 +23,8 @@ const tagName = 'be-one-and-only';
 const ifWantsToBe = 'one-and-only';
 const upgrade = 'template';
 
+export const virtualProps: (keyof VirtualProps)[] = ['id'];
+
 define<PP & BeDecoratedProps<PP, Actions>, Actions>({
     config:{
         tagName,
@@ -30,7 +32,7 @@ define<PP & BeDecoratedProps<PP, Actions>, Actions>({
             ifWantsToBe,
             upgrade,
             forceVisible: ['template'],
-            virtualProps: ['id'],
+            virtualProps,
             primaryProp: 'id'
         },
         actions: {
